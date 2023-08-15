@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Creekiver", "Creekiver.csproj", "{E698C0CA-2493-4EDF-9079-3D33E9F3CB7D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E698C0CA-2493-4EDF-9079-3D33E9F3CB7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E698C0CA-2493-4EDF-9079-3D33E9F3CB7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E698C0CA-2493-4EDF-9079-3D33E9F3CB7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E698C0CA-2493-4EDF-9079-3D33E9F3CB7D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AB5CE27C-3B3F-4781-A78A-C295B97ED0AF}
+	EndGlobalSection
+EndGlobal
