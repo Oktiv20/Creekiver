@@ -11,7 +11,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Creekiver.Migrations
 {
     [DbContext(typeof(CreekRiverDbContext))]
-    [Migration("20230815020642_InitialCreate")]
+    [Migration("20230815231419_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -75,14 +75,7 @@ namespace Creekiver.Migrations
                             Id = 4,
                             CampsiteTypeId = 4,
                             ImageUrl = "https://tnstateparks.com/assets/images/content-images/campgrounds/249/colsp-area2-site73.jpg",
-                            Nickname = "Laying Deer"
-                        },
-                        new
-                        {
-                            Id = 5,
-                            CampsiteTypeId = 5,
-                            ImageUrl = "https://tnstateparks.com/assets/images/content-images/campgrounds/249/colsp-area2-site73.jpg",
-                            Nickname = "Howling Wolf"
+                            Nickname = "Sleeping Bear"
                         });
                 });
 
@@ -172,8 +165,8 @@ namespace Creekiver.Migrations
                         {
                             Id = 1,
                             CampsiteId = 1,
-                            CheckinDate = new DateTime(2023, 8, 14, 0, 0, 0, 0, DateTimeKind.Local),
-                            CheckoutDate = new DateTime(2023, 8, 21, 0, 0, 0, 0, DateTimeKind.Local),
+                            CheckinDate = new DateTime(2023, 8, 15, 0, 0, 0, 0, DateTimeKind.Local),
+                            CheckoutDate = new DateTime(2023, 8, 22, 0, 0, 0, 0, DateTimeKind.Local),
                             UserProfileId = 1
                         });
                 });

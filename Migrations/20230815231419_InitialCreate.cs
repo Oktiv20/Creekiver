@@ -101,11 +101,6 @@ namespace Creekiver.Migrations
                 });
 
             migrationBuilder.InsertData(
-                table: "Campsites",
-                columns: new[] { "Id", "CampsiteTypeId", "ImageUrl", "Nickname" },
-                values: new object[] { 5, 5, "https://tnstateparks.com/assets/images/content-images/campgrounds/249/colsp-area2-site73.jpg", "Howling Wolf" });
-
-            migrationBuilder.InsertData(
                 table: "UserProfiles",
                 columns: new[] { "Id", "Email", "FirstName", "LastName" },
                 values: new object[] { 1, "testblunt1020@gmail.com", "Kyle", "Blunt" });
@@ -118,13 +113,13 @@ namespace Creekiver.Migrations
                     { 1, 1, "https://tnstateparks.com/assets/images/content-images/campgrounds/249/colsp-area2-site73.jpg", "Barred Owl" },
                     { 2, 2, "https://tnstateparks.com/assets/images/content-images/campgrounds/249/colsp-area2-site73.jpg", "Long Creek" },
                     { 3, 3, "https://tnstateparks.com/assets/images/content-images/campgrounds/249/colsp-area2-site73.jpg", "Hunter Row" },
-                    { 4, 4, "https://tnstateparks.com/assets/images/content-images/campgrounds/249/colsp-area2-site73.jpg", "Laying Deer" }
+                    { 4, 4, "https://tnstateparks.com/assets/images/content-images/campgrounds/249/colsp-area2-site73.jpg", "Sleeping Bear" }
                 });
 
             migrationBuilder.InsertData(
                 table: "Reservations",
                 columns: new[] { "Id", "CampsiteId", "CheckinDate", "CheckoutDate", "UserProfileId" },
-                values: new object[] { 1, 1, new DateTime(2023, 8, 14, 0, 0, 0, 0, DateTimeKind.Local), new DateTime(2023, 8, 21, 0, 0, 0, 0, DateTimeKind.Local), 1 });
+                values: new object[] { 1, 1, new DateTime(2023, 8, 15, 0, 0, 0, 0, DateTimeKind.Local), new DateTime(2023, 8, 22, 0, 0, 0, 0, DateTimeKind.Local), 1 });
 
             migrationBuilder.CreateIndex(
                 name: "IX_Campsites_CampsiteTypeId",
