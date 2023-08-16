@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Http.Json;
+using Microsoft.EntityFrameworkCore;
 using System.Text.Json.Serialization;
 
 
@@ -30,6 +31,25 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+
+app.MapGet("/api/campsites", (CreekRiverDbContext db) =>
+{
+    return db.Campsites.ToList();
+});
+
+
+app.MapGet("/api/campsites/{id}", (CreekRiverDbContext db, int id) =>
+{
+    var campsite = db.Campsites.Include(c => c.CampsiteType).Single(c => c.Id == id);
+
+    if (campsite == null)
+    {
+        return Results.NotFound();
+    }
+
+    return Results.Ok(campsite);
+});
 
 app.UseHttpsRedirection();
 
