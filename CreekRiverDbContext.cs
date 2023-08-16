@@ -1,5 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
-using CreekRiver.Models;
+﻿using CreekRiver.Models;
+using Microsoft.EntityFrameworkCore;
 
 public class CreekRiverDbContext : DbContext
 {
@@ -29,15 +29,14 @@ public class CreekRiverDbContext : DbContext
             new Campsite {Id = 1, CampsiteTypeId = 1, Nickname = "Barred Owl", ImageUrl="https://tnstateparks.com/assets/images/content-images/campgrounds/249/colsp-area2-site73.jpg"},
             new Campsite {Id = 2, CampsiteTypeId = 2, Nickname = "Long Creek", ImageUrl="https://tnstateparks.com/assets/images/content-images/campgrounds/249/colsp-area2-site73.jpg"},
             new Campsite {Id = 3, CampsiteTypeId = 3, Nickname = "Hunter Row", ImageUrl="https://tnstateparks.com/assets/images/content-images/campgrounds/249/colsp-area2-site73.jpg"},
-            new Campsite {Id = 4, CampsiteTypeId = 4, Nickname = "Laying Deer", ImageUrl="https://tnstateparks.com/assets/images/content-images/campgrounds/249/colsp-area2-site73.jpg"},
-            new Campsite {Id = 5, CampsiteTypeId = 5, Nickname = "Howling Wolf", ImageUrl="https://tnstateparks.com/assets/images/content-images/campgrounds/249/colsp-area2-site73.jpg"},
+            new Campsite {Id = 4, CampsiteTypeId = 4, Nickname = "Sleeping Bear", ImageUrl="https://tnstateparks.com/assets/images/content-images/campgrounds/249/colsp-area2-site73.jpg"},
         });
-        
+
         modelBuilder.Entity<UserProfile>().HasData(new UserProfile[]
         {
             new UserProfile {Id = 1, FirstName = "Kyle", LastName = "Blunt", Email = "testblunt1020@gmail.com"},
         });
-        
+
         modelBuilder.Entity<Reservation>().HasData(new Reservation[]
         {
             new Reservation {Id = 1, CampsiteId = 1, UserProfileId = 1, CheckinDate = DateTime.Today, CheckoutDate = DateTime.Today.AddDays(7) },
