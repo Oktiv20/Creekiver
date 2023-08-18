@@ -95,6 +95,16 @@ app.MapPut("api/campsites/{id}", (CreekRiverDbContext db, int id, Campsite camps
 
 });
 
+
+app.MapGet("/api/reservations", (CreekRiverDbContext db) =>
+{
+    return db.Reservations
+        .Include(r => r.UserProfile)
+        .Include(r => r.Campsite)
+        .ThenInclude(c => c.CampsiteType)
+        .OrderBy(res => res.CheckinDate)
+        .ToList();
+});
 app.UseHttpsRedirection();
 
 app.Run();
