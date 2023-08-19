@@ -136,6 +136,9 @@ app.MapDelete("/api/reservations/{id}", (CreekRiverDbContext db, int id) =>
     return Results.NoContent();
 
 });
+
+
+
 app.UseHttpsRedirection();
 
 app.Run();
